@@ -18,11 +18,63 @@ namespace NumberSystems
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
+    enum Systems
+    {
+        Двоичная_система = 2,
+        Троичная_система = 3
+
+
+    }
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private int InSystem;
+        private int OutSystem;
+        private string Number;
+
+        
+
+        private void InButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            int system = 0;
+            foreach (UIElement item in In.Children)
+                if (item is Button)
+                {
+                    ((Button)item).Background = Brushes.LightGray; //Все кнопки StackPanel "In" становятся серыми
+                    if(item == btn)
+                        InSystem = system + 2;
+                    system++;
+                }
+            btn.Background = Brushes.LightGreen;      //Выбранная кнопка - выделяется цветом
+        }
+
+        private void OutButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            int system = 0;
+            foreach (UIElement item in Out.Children)
+                if (item is Button)
+                {
+                    ((Button)item).Background = Brushes.LightGray; //Все кнопки StackPanel "In" становятся серыми
+                    if (item == btn)
+                        OutSystem = system + 2;
+                    system++;
+                }
+            btn.Background = Brushes.LightGreen;      //Выбранная кнопка - выделяется цветом
+        }
+
+
+        private void TransferButton_Click(object sender, RoutedEventArgs e)
+        {
+            Number = InField.Text;
         }
     }
 }
