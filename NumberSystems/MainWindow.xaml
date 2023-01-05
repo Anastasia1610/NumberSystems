@@ -71,7 +71,7 @@
                 </Button.Effect>
             </Button>
 
-            <Button Content="Десятиричная система" Height="20" Width="200" Margin="0,10,0,0" Click="InButton_Click">
+            <Button Content="Десятичная система" Height="20" Width="200" Margin="0,10,0,0" Click="InButton_Click">
                 <Button.Effect>
                     <DropShadowEffect ShadowDepth="10"/>
                 </Button.Effect>
@@ -170,7 +170,7 @@
                 </Button.Effect>
             </Button>
 
-            <Button Content="Десятиричная система" Height="20" Width="200" Margin="0,10,0,0" Click="OutButton_Click">
+            <Button Content="Десятичная система" Height="20" Width="200" Margin="0,10,0,0" Click="OutButton_Click">
                 <Button.Effect>
                     <DropShadowEffect ShadowDepth="10"/>
                 </Button.Effect>
@@ -194,7 +194,7 @@
                 </Button.Effect>
             </Button>
 
-            <Button Content="Четірнадцатиричная система" Height="20" Width="200" Margin="0,10,0,0" Click="OutButton_Click">
+            <Button Content="Четырнадцатиричная система" Height="20" Width="200" Margin="0,10,0,0" Click="OutButton_Click">
                 <Button.Effect>
                     <DropShadowEffect ShadowDepth="10"/>
                 </Button.Effect>

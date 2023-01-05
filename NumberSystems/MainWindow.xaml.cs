@@ -86,7 +86,7 @@ namespace NumberSystems
                     else if (arr[i] == "E")
                         arr[i] = "14";
                     else if (arr[i] == "F")
-                        arr[i] = "15";    
+                        arr[i] = "15";
                 }
 
                 int sum = 0;
@@ -101,10 +101,28 @@ namespace NumberSystems
             string OutNumber = "";
             do
             {
-                OutNumber += int.Parse(Number) % OutSystem;
+                int num = int.Parse(Number) % OutSystem;
+                if (num > 9)
+                {
+                    if (num == 10)
+                        OutNumber += "A";
+                    if (num == 11)
+                        OutNumber += "B";
+                    if (num == 12)
+                        OutNumber += "C";
+                    if (num == 13)
+                        OutNumber += "D";
+                    if (num == 14)
+                        OutNumber += "E";
+                    if (num == 15)
+                        OutNumber += "F";
+                }
+                else
+                    OutNumber += num;
                 Number = (int.Parse(Number) / OutSystem).ToString();
             } while (int.Parse(Number) > OutSystem);
-            OutNumber += int.Parse(Number);
+            if (int.Parse(Number) != 0)
+                OutNumber += int.Parse(Number);
             char[] array = OutNumber.ToCharArray();
             Array.Reverse(array);
             OutNumber = new string(array);
