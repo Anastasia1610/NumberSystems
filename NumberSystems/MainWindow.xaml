@@ -5,8 +5,214 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NumberSystems"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="NumsSystems" Height="650" Width="800" MinHeight="650" MinWidth="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="binary-code-background-59220.jpg"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel>
+            <TextBox Height="40" Width="200" Margin="0, 50, 0, 0">
+                <TextBox.Effect>
+                    <DropShadowEffect ShadowDepth="15"/>
+                </TextBox.Effect>
+            </TextBox>
+
+            <Button Content="Двоичная система" Height="20" Width="200" Margin="0,50,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Троичная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Четвертичная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Пятиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Шестиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Семиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Восьмиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Девятиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Десятиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Одиннадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Двенадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Тринадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Четірнадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Пятнадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Шестнадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBox Height="40" Width="200" IsReadOnly="True" Margin="0, 50, 0, 0">
+                <TextBox.Effect>
+                    <DropShadowEffect ShadowDepth="15"/>
+                </TextBox.Effect>
+            </TextBox>
+
+            <Button Content="Двоичная система" Height="20" Width="200" Margin="0,50,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Троичная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Четвертичная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Пятиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Шестиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Семиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Восьмиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Девятиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Десятиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Одиннадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Двенадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Тринадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Четірнадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Пятнадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Content="Шестнадцатиричная система" Height="20" Width="200" Margin="0,10,0,0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10"/>
+                </Button.Effect>
+            </Button>
+
+        </StackPanel>
 
     </Grid>
 </Window>
