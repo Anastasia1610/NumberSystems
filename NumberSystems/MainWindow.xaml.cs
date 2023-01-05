@@ -121,8 +121,27 @@ namespace NumberSystems
                     OutNumber += num;
                 Number = (int.Parse(Number) / OutSystem).ToString();
             } while (int.Parse(Number) > OutSystem);
-            if (int.Parse(Number) != 0)
-                OutNumber += int.Parse(Number);
+            if (int.Parse(Number) > 0)
+            {
+                if(int.Parse(Number) < 10)
+                    OutNumber += int.Parse(Number);
+                else
+                {
+                    if (Number == "10")
+                        OutNumber += "A";
+                    if (Number == "11")
+                        OutNumber += "B";
+                    if (Number == "12")
+                        OutNumber += "C";
+                    if (Number == "13")
+                        OutNumber += "D";
+                    if (Number == "14")
+                        OutNumber += "E";
+                    if (Number == "15")
+                        OutNumber += "F";
+                }
+            }
+               
             char[] array = OutNumber.ToCharArray();
             Array.Reverse(array);
             OutNumber = new string(array);
