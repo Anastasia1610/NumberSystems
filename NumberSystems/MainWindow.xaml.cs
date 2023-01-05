@@ -20,14 +20,6 @@ namespace NumberSystems
     /// </summary>
     /// 
 
-    enum Systems
-    {
-        Двоичная_система = 2,
-        Троичная_система = 3
-
-
-    }
-
     public partial class MainWindow : Window
     {
         public MainWindow()
