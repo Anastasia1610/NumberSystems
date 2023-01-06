@@ -103,6 +103,14 @@ namespace NumberSystems
                         InField.Text = "";
                         return; 
                     }
+
+                    //Проверка на соответствие числа входящей системе счисления
+                    if(arrNums[i] >= InSystem)
+                    {
+                        MessageBox.Show("The input number doesn't match the selected number system", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        InField.Text = "";
+                        return;
+                    }
                 }
 
                 int sum = 0;
