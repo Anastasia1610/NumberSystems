@@ -91,6 +91,20 @@ namespace NumberSystems
                         arr[i] = "15";
                 }
 
+                //Перевод массива из string в int для нахождения ошибки
+                int[] arrNums = new int[arr.Length];
+                for (int i = 0; i < arrNums.Length; i++)
+                {
+                    if (int.TryParse(arr[i], out int res))
+                        arrNums[i] = res;   
+                    else
+                    {
+                        MessageBox.Show("Invalid input", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        InField.Text = "";
+                        return; 
+                    }
+                }
+
                 int sum = 0;
                 for (int i = 0; i < arr.Length; i++)
                 {
