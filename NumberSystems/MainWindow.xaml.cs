@@ -53,7 +53,7 @@ namespace NumberSystems
             foreach (UIElement item in Out.Children)
                 if (item is Button)
                 {
-                    ((Button)item).Background = Brushes.LightGray; //Все кнопки StackPanel "In" становятся серыми
+                    ((Button)item).Background = Brushes.LightGray; //Все кнопки StackPanel "Out" становятся серыми
                     if (item == btn)
                         OutSystem = system + 2;
                     system++;
@@ -66,12 +66,12 @@ namespace NumberSystems
         {
             Number = InField.Text;
 
-            if(Number == "" || InSystem == 0 || OutSystem == 0) return;
+            if(Number == "" || InSystem == 0 || OutSystem == 0) return; //Выход, если число не введено или системы счисления не выбраны
 
             if (InSystem != 10)  //Перевод входящего числа в десятичную систему
             {
                 string[] arr = new string[Number.Length];
-                for (int i = 0; i < arr.Length; i++)
+                for (int i = 0; i < arr.Length; i++)  
                 {
                     arr[i] = Number[i].ToString();
                     if (arr[i] == "A")
@@ -111,10 +111,12 @@ namespace NumberSystems
                     }
                 }
 
+                //Конвертация числа в десятичную систему
+        
                 int sum = 0;
                 for (int i = 0; i < arr.Length; i++)
                     sum += int.Parse(arr[i]) * (int)(Math.Pow(InSystem, arr.Length - i - 1));
-                }
+                
                 Number = sum.ToString();
             }
 
@@ -141,7 +143,8 @@ namespace NumberSystems
                 else
                     OutNumber += num;
                 Number = (int.Parse(Number) / OutSystem).ToString();
-            } while (int.Parse(Number) > OutSystem);
+            } while (int.Parse(Number) >= OutSystem);
+
             if (int.Parse(Number) > 0)
             {
                 if(int.Parse(Number) < 10)
