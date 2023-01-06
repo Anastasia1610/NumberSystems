@@ -27,8 +27,8 @@ namespace NumberSystems
             InitializeComponent();
         }
 
-        private int InSystem;
-        private int OutSystem;
+        private int InSystem = 0;
+        private int OutSystem = 0;
         private string Number;
 
 
@@ -67,6 +67,8 @@ namespace NumberSystems
         private void TransferButton_Click(object sender, RoutedEventArgs e)
         {
             Number = InField.Text;
+
+            if(Number == "" || InSystem == 0 || OutSystem == 0) return;
 
             if (InSystem != 10)  //Перевод входящего числа в десятичную систему
             {
