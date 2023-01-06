@@ -31,8 +31,6 @@ namespace NumberSystems
         private int OutSystem = 0;
         private string Number;
 
-
-
         private void InButton_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
@@ -115,7 +113,6 @@ namespace NumberSystems
 
                 int sum = 0;
                 for (int i = 0; i < arr.Length; i++)
-                {
                     sum += int.Parse(arr[i]) * (int)(Math.Pow(InSystem, arr.Length - i - 1));
                 }
                 Number = sum.ToString();
